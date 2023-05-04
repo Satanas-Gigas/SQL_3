@@ -21,9 +21,9 @@ WHERE year BETWEEN 2018 AND 2020;
 --Исполнители, чьё имя состоит из одного слова.
 SELECT name 
 FROM singer
-WHERE name NOT LIKE '% %';
+WHERE name NOT LIKE "% %";
 
 --Название треков, которые содержат слово «мой» или «my». 
 SELECT name 
 FROM track
-WHERE name LIKE '%мой%' OR name LIKE '%my%';
+WHERE name LIKE "%мой%" OR name LIKE "%my%";
